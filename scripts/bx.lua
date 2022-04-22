@@ -92,6 +92,11 @@ project "bx"
 		}
 	end
 
+	-- custom path edits
+	libdirs { "../../../deps" }
+	objdir    "../../../intermediate/"
+    targetdir "../../../deps"
+
 	configuration { "Debug" }
 		defines {
 			"BX_CONFIG_DEBUG=1",
@@ -103,3 +108,5 @@ project "bx"
 		}
 
 	configuration {}
+
+	
